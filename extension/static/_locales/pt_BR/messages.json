@@ -1,0 +1,50 @@
+{
+    "appDesc": {
+        "message": "Realiza a conversão de slides do slideshare em PDF"
+    },
+    "error": {
+        "message": "<strong>Erro!</strong> $details$",
+        "placeholders": {
+            "details": {
+                "content": "$1",
+                "example": "Algo deu errado"
+            }
+        }
+    },
+    "errorPageRangeExceedsLimit": {
+        "message": "A referência de páginas excede o limite de $limit$",
+        "placeholders": {
+            "limit": {
+                "content": "$1",
+                "example": "10"
+            }
+        }
+    },
+    "errorInvalidPageRange": {
+        "message": "Use um intervalo de páginas válido. Por exemplo: 1-3, 8, 11-13."
+    },
+    "yourFileIsReady": {
+        "message": "<strong>Sucesso!</strong> Seu arquivo está pronto!"
+    },
+    "downloadNow": {
+        "message": "Baixar agora"
+    },
+    "waitDownloadingNow": {
+        "message": "Aguarde, baixando..."
+    },
+    "pages": {
+        "message": "Páginas"
+    },
+    "pageFilterAll": {
+        "message": "Todas"
+    },
+    "pageFilterOdd": {
+        "message": "Ímpar"
+    },
+    "pageFilterEven": {
+        "message": "Par"
+    },
+    "pageFilterCustom": {
+        "message": "Personalizado"
+    }
+}

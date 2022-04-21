@@ -1,0 +1,50 @@
+{
+    "appDesc": {
+        "message": "Convierte diapositivas de slideshare a PDF"
+    },
+    "error": {
+        "message": "<strong>Error!</strong> $details$",
+        "placeholders": {
+            "details": {
+                "content": "$1",
+                "example": "Algo salió mal"
+            }
+        }
+    },
+    "errorPageRangeExceedsLimit": {
+        "message": "La referencia de la página supera el límite de $limit$",
+        "placeholders": {
+            "limit": {
+                "content": "$1",
+                "example": "10"
+            }
+        }
+    },
+    "errorInvalidPageRange": {
+        "message": "Utilice un intervalo de páginas válido. Por ejemplo: 1-3, 8, 11-13."
+    },
+    "yourFileIsReady": {
+        "message": "<strong>¡Éxito!</strong> Su archivo está listo!"
+    },
+    "downloadNow": {
+        "message": "Descargar ahora"
+    },
+    "waitDownloadingNow": {
+        "message": "Espera, descargando ahora..."
+    },
+    "pages": {
+        "message": "Paginas"
+    },
+    "pageFilterAll": {
+        "message": "Todas"
+    },
+    "pageFilterOdd": {
+        "message": "Impar"
+    },
+    "pageFilterEven": {
+        "message": "Par"
+    },
+    "pageFilterCustom": {
+        "message": "Personalizado"
+    }
+}

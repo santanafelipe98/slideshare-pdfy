@@ -1,0 +1,34 @@
+{
+    "manifest_version": 3,
+    "name": "slideshare PDFy",
+    "version": "0.1.0",
+    "description": "Realiza a conversão de slides do slideshare em PDF",
+    "default_locale": "en",
+    "permissions": [
+        "tabs",
+        "storage"
+    ],
+    "icons": {
+        "16": "icons/x16.png",
+        "32": "icons/x32.png",
+        "48": "icons/x48.png"
+    },
+    "action": {
+        "default_icon": {
+            "16": "icons/x16.png",
+            "32": "icons/x32.png",
+            "48": "icons/x48.png"
+        },
+        "default_popup": "popup.html",
+        "default_title": "slideshare PDFy"
+    },
+    "background": {
+        "service_worker": "src/backgroundScript.js"
+    },
+    "content_scripts": [
+        {
+            "matches": [ "*://*.slideshare.net/*/*" ],
+            "js": [ "src/contentScript.js" ]
+        }
+    ]
+}

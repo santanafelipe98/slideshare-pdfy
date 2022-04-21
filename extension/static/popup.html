@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles/popup.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <header>
+            <div class="heading">
+                <img class="brand" src="icons/x96.png" alt="SlideShare PDFy Icon">
+                <h1>slide<strong>share PDFy</strong></h1>
+            </div>
+        </header>
+        <main class="container">
+            <div id="content">
+                <div class="slideshare-header">
+                    <div id="slide_thumbnail" class="j-thumbnail">
+                    </div>
+                    <div class="slideshare-metadata">
+                        <h1 id="slide_title" class="slideshare-title">Título do Slide</h1>
+                        <div class="slideshare-pages"> <i class="fa-solid fa-book-open"></i> <span id="slide_page_count">15</span> <span id="page_count_text">páginas</span></div>
+                    </div>
+                </div>
+
+                <div class="slide-form">
+                    <div class="form-group">
+                        <label id="pages_label" for="pages">Páginas</label>
+                        <select id="page_filter" class="custom-select">
+                            <option value="all">Todas</option>
+                            <option value="even">Par</option>
+                            <option value="odd">Ímpar</option>
+                            <option value="custom">Personalizado</option>
+                        </select>
+                        <input class="input-control" id="pages" type="text" placeholder="exemplo: 1-3, 8, 11-13">
+
+                        <input type="hidden" id="images_url" value="">
+                    </div>
+                </div>
+
+                <div id="message" class="message"></div>
+
+                <div class="slideshare-download-button-wrapper">
+                    <button id="btn_get_pdf" class="btn btn-primary">
+                        <img id="loading" class="loading-image" src="images/loading.gif" alt="Loading">
+                        <i class="fa-solid fa-download"></i>
+                        <span id="btn_get_pdf_text">Baixar agora</span>
+                    </button>
+                </div>
+            </div>
+
+            <div id="placeholder">
+                <div class="rect-placeholder"></div>
+                <div class="rect-placeholder"></div>
+                <div class="rect-placeholder"></div>
+            </div>
+        </main>
+        <script src="popup.js"></script>
+    </body>
+</html>
