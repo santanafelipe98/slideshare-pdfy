@@ -21,7 +21,7 @@ const {
 
 const { getCurrentTab } = require('./utils')
 
-const BASE_URL = 'http://localhost:3033/api'
+const BASE_URL = 'https://slideshare-pdfy-api.onrender.com/api'
 let jobQueue   = {}
 
 /**
